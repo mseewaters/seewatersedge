@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<title>OneEarUp Analytics</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+	<style>
+		body, h1 {font-family: "Roboto", sans-serif}
+		body, html {height: 100%}
+		.bgimg {
+		  background-image: url('images/lucy2.jpg');
+		  min-height: 100%;
+		  background-position: center;
+		  background-size: cover;
+		  background-origin;
+		}
+		.form-container {
+		  position: fixed;
+		  bottom: 10px;
+		  right: 10px;
+		  background-color: rgba(255, 255, 255, 0.7);
+		  padding: 20px;
+		  border-radius: 5px;
+		}
+	</style>
+
+	<body>
+		<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+			<div class="w3-display-topleft w3-padding-large w3-large">
+				<h2> Home </h2>
+			</div>
+			<div class="w3-display-topright w3-padding-large">
+				<h1 class="w3-jumbo w3-animate-top">OneEarUp Analytics</h1>
+				<hr class="w3-bottombar w3-border-white" style="margin:auto;width:40%">
+				<h1 class="w3-xxlarge w3-center">coming soon</h1>
+			</div>
+			<div class="w3-display-bottomleft w3-padding-large">
+				Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+			</div>
+		</div>
+		
+		<div class="form-container">
+			<h2>Sign up for alerts</h2>
+			<form action="https://s3.amazonaws.com/seewatersedge.com/success.html" method="get">
+				<label for="name">Name:</label><br>
+				<input type="text" id="name" name="name" required><br><br>
+
+				<label for="phone">Phone Number:</label><br>
+				<input type="tel" id="phone" name="phone" required><br><br>
+
+				<label for="city">City:</label><br>
+				<input type="text" id="city" name="city" required><br><br>
+
+				<label for="state">State:</label><br>
+				<input type="text" id="state" name="state" required><br><br>
+
+				<input type="checkbox" id="agree" name="agree">
+				<label for="agree">I agree to receive daily alerts and accept </label><br>
+				the data privacy statement.
+
+				<p> You may unsubscribe at any time by adding <br>
+				your phone number above and clicking <a href="https://s3.amazonaws.com/seewatersedge.com/unsubscribe.html">UNSUBSCRIBE</a>. </p>
+				
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	</body>
+</html>
